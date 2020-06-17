@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+	<script type="text/javascript" src="comun.js"></script>
+	<script type="text/javascript" src="1MarcaCombustible.js"></script>
+	<meta charset="utf-8">
+	<link rel="icon" type="image/svg+xml" href="icononegro.png" sizes="any">
+	<title>Formulario - Marca y combustible</title>
+</head>
+<body>
+	<header>
+	<nav class="navbar navbar-dark bg-primary">
+		<a class="navbar-brand" href="#">
+			<img src="iconoblanco.png" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy"> Seguro de coche
+		</a>
+	</nav>
+	</header>
+	<br>
+		<div class="container">
+	<br>
+		<div class="d-block d-xl-none">
+			<p>Marca y combustible</p>
+		</div>
+			<div class="d-none d-xl-block">
+			<div class="azul">Marca y combustible</div>
+			<div class="gris">Propietario y ocupación</div>
+			<div class="gris">Uso, aparcamiento y remolque</div>
+			<div class="gris">Matriculación y carné</div>
+			<div class="gris">Kilómetros a recorrer</div>
+			<div class="gris">Procedencia</div>
+			<div class="gris">Datos personales</div>
+			<div class="gris">Dirección</div>
+		</div>
+	<br class="d-none d-xl-block"><br class="d-none d-xl-block">
+		<div class="progress">
+			<div class="progress-bar azul" role="progressbar"></div>
+			<div class="progress-bar gris" role="progressbar"></div>
+			<div class="progress-bar gris" role="progressbar"></div>
+			<div class="progress-bar gris" role="progressbar"></div>
+			<div class="progress-bar gris" role="progressbar"></div>
+			<div class="progress-bar gris" role="progressbar"></div>
+			<div class="progress-bar gris" role="progressbar"></div>
+		</div>
+	<br>
+		<form action="2PropietarioOcupacion.html" id="formulario">
+			<h1>Marca y combustible</h1>
+		<hr>
+			<label form="marca">Seleccione la marca del coche</label>
+			<div id="marca2" class="marca">
+				<ul>
+					<li><label id="AUDI" for="idAUDIRadio" ><img src="AUDI.png">AUDI</label></li>
+					<li><label id="BMW" for="idBMWRadio" ><img src="BMW.png">BMW</label></li>
+					<li><label id="CITROEN" for="idCITROENRadio" ><img src="CITROEN.png">CITROEN</label></li>
+					<li><label id="DACIA" for="idDACIARadio" ><img src="DACIA.png">DACIA</label></li>
+					<li><label id="FIAT" for="idFIATRadio" ><img src="FIAT.png">FIAT</label></li>
+					<li><label id="FORD" for="idFORDRadio" ><img src="FORD.png">FORD</label></li>
+					<li><label id="HYUNDAI" for="idHYUNDAIRadio" ><img src="HYUNDAI.png">HYUNDAI</label></li>
+					<li><label id="KIA" for="idKIARadio" ><img src="KIA.png">KIA</label></li>
+					<li><label id="MERCEDES" for="idMERCEDESRadio" ><img src="MERCEDES.png">MERCEDES</label></li>
+					<li><label id="NISSAN" for="idNISSANRadio" ><img src="NISSAN.png">NISSAN</label></li>
+					<li><label id="OPEL" for="idOPELRadio" ><img src="OPEL.png">OPEL</label></li>
+					<li><label id="PEUGEOT" for="idPEUGEOTRadio" ><img src="PEUGEOT.png">PEUGEOT</label></li>
+					<li><label id="RENAULT" for="idRENAULTRadio" ><img src="RENAULT.png">RENAULT</label></li>
+					<li><label id="SEAT" for="idSEATRadio" ><img src="SEAT.png">SEAT</label></li>
+					<li><label id="TOYOTA" for="idTOYOTARadio" ><img src="TOYOTA.png">TOYOTA</label></li>
+					<li><label id="VOLKSWAGEN" for="idVOLKSWAGENRadio" ><img src="VOLKSWAGEN.png">VOLKSWAGEN</label></li>
+				</ul>
+			</div>
+			<div class="marcainput">
+				<input name="marca" type="radio" id="idAUDIRadio">
+				<input name="marca" type="radio" id="idBMWRadio">
+				<input name="marca" type="radio" id="idCITROENRadio">
+				<input name="marca" type="radio" id="idDACIARadio">
+				<input name="marca" type="radio" id="idFIATRadio">
+				<input name="marca" type="radio" id="idFORDRadio">
+				<input name="marca" type="radio" id="idHYUNDAIRadio">
+				<input name="marca" type="radio" id="idKIARadio">
+				<input name="marca" type="radio" id="idMERCEDESRadio">
+				<input name="marca" type="radio" id="idNISSANRadio">
+				<input name="marca" type="radio" id="idOPELRadio">
+				<input name="marca" type="radio" id="idPEUGEOTRadio">
+				<input name="marca" type="radio" id="idRENAULTRadio">
+				<input name="marca" type="radio" id="idSEATRadio">
+				<input name="marca" type="radio" id="idTOYOTARadio">
+				<input name="marca" type="radio" id="idVOLKSWAGENRadio">
+				</div>
+			<label>Seleccione el tipo de combustible</label>
+				<input type="radio" name="combustible" value="Diesel"> Diesel
+			<br>
+				<input type="radio" name="combustible" value="Gasolina"> Gasolina
+			<br>
+				<input type="radio" name="combustible" value="Otros"> Otros (Híbridos, Eléctricos, etc...)
+			<br><br>
+			<hr>
+			<p >
+				<input class="siguiente, btn btn-primary" type="submit" value='Siguiente'></input>
+			</p>
+		</form>
+	</div>
+</body>
+</html>

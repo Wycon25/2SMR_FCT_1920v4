@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" type="text/css" href="./estilo.css">
+	<script type="text/javascript" src="comun.js"></script>
+	<script type="text/javascript" src="2PropietarioOcupacion.js"></script>
+	<meta charset="utf-8">
+	<link rel="icon" type="image/svg+xml" href="icononegro.png" sizes="any">
+	<title>Formulario - Propietario y ocupación</title>
+</head>
+<body>
+	<header>
+		<nav class="navbar navbar-dark bg-primary">
+		<a class="navbar-brand" href="#">
+			<img src="iconoblanco.png" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy"> Seguro de coche
+		</a>
+	</nav>
+	</header>
+	<br>
+		<div class="container">
+			<br>
+			<div class="d-block d-xl-none">
+				<p>Propietario y ocupación</p>
+			</div>
+			<div class="d-none d-xl-block">
+				<div class="azul">Marca y combustible</div>
+				<div class="azul">Propietario y ocupación</div>
+				<div class="gris">Uso, aparcamiento y remolque</div>
+				<div class="gris">Matriculación y carné</div>
+				<div class="gris">Kilómetros a recorrer</div>
+				<div class="gris">Procedencia</div>
+				<div class="gris">Datos personales</div>
+				<div class="gris">Dirección</div>
+			</div>
+				<br class="d-none d-xl-block"><br class="d-none d-xl-block">
+				<div class="progress">
+				<div id="idMarcaCombustible" class="progress-bar azul" role="progressbar"></div>
+				<div class="progress-bar azul" role="progressbar"></div>
+				<div class="progress-bar gris" role="progressbar"></div>
+				<div class="progress-bar gris" role="progressbar"></div>
+				<div class="progress-bar gris" role="progressbar"></div>
+				<div class="progress-bar gris" role="progressbar"></div>
+				<div class="progress-bar gris" role="progressbar"></div>
+			</div>
+			<br>
+		<form action="3Uso.html" onload="cargarEvento();">
+			<h1>Propietario y ocupación</h1>
+		<hr>
+			<label form="marca">Propietario del coche</label>
+				<select class="custom-select" name="propietario">
+					<option value="Conductor principal">Conductor principal</option>
+					<option value="La pareja/cónyuge del conductor principal">La pareja/cónyuge del conductor principal</option>
+					<option value="Hijo/a del conductor principal">Hijo/a del conductor principal</option>
+					<option value="Hermano/a del conductor principal">Hermano/a del conductor principal</option>
+					<option value="Padre/Madre del conductor principal">Padre/Madre del conductor principal</option>
+					<option value="Otro">Otro</option>
+				</select>
+		<br><br><br>
+			<label form="Ocupación">Ocupación</label>
+				<select class="custom-select" name="ocupacion">
+					<option value="Abogado">Abogado, juez</option>
+					<option value="Administrativo">Administrativo</option>
+					<option value="Agricultor">Agricultor, ganadero o marinero</option>
+					<option value="Responsable">Responsable de tareas del hogar</option>
+					<option value="Comercial">Comercial o vendedor representante</option>
+					<option value="Conductor">Conductor (taxista, camionero, repartidor)</option>
+					<option value="Construcción">Construcción (albañil, carpintero)</option>
+					<option value="Dependiente">Dependiente, cajero</option>
+					<option value="Directivo">Directivo, ejecutivo, gerente</option>
+					<option value="Diseñador">Diseñador, artista</option>
+					<option value="Empleado">Empleado de banca o seguros</option>
+					<option value="Empresario">Empresario</option>
+					<option value="Estudiante">Estudiante</option>
+					<option value="Funcionario">Funcionario</option>
+					<option value="Hostelería">Hostelería (camarero, cocinero, recepcionista)</option>
+					<option value="Informático">Informático</option>
+					<option value="Ingeniero">Ingeniero o arquitecto</option>
+					<option value="Mecánico">Mecánico</option>
+					<option value="Médico">Médico, dentista, psicólogo</option>
+					<option value="Militar">Militar</option>
+					<option value="Operario">Operario</option>
+					<option value="Otros">Otros autónomos</option>
+					<option value="Peluquería">Peluquería y estética</option>
+					<option value="Pensionista">Pensionista / Jubilado</option>
+					<option value="Policía">Policía, guardia Civil, bombero</option>
+					<option value="Profesión">Profesión sanitaria, auxiliar de enfermería</option>
+					<option value="Profesor">Profesor, catedrático, maestro</option>
+					<option value="Reportero">Reportero, periodista</option>
+					<option value="Seguridad">Seguridad privada, vigilante de seguridad</option>
+					<option value="Sin ocupación">Sin ocupación o empleo</option>
+					<option value="Técnico">Técnico o ingenierías técnicas</option>
+					<option value="Teleoperador">Teleoperador</option>
+				</select>
+		<br>
+		<br>
+		<hr>
+			<p>
+				<a href="1MarcaCombustible.html"><button class="btn btn-secondary" type="button">Atrás</button></a>
+				<input class="siguiente, btn btn-primary" type="submit" value='Siguiente'></input>
+			</p>
+		</form>
+	</div>
+</body>
+</html>

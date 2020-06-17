@@ -1,0 +1,106 @@
+/*Estilo para la barra de que indica el progreso y también sirve para navegar.*/
+
+.navbar-brand{
+	margin: auto;
+}
+.d-block p{
+	font-weight: bold;
+}
+.d-none div{
+	font-size: 15px;
+	width: 12.5%;
+	text-align: center;
+	float:left;
+}
+.azul{
+	color: #007BFF;
+	width: 12.5%;
+	border-right: 1px solid white;
+	cursor: pointer;
+}
+.gris{
+	color: gray;
+	width: 0%;
+	border-right: 1px solid white;
+}
+
+/*Estilo para los diferentes elementos del formulario.*/
+
+form h1{
+	font-weight: bold;
+	text-align: center;
+	font-size: 40px;
+	margin: 20px;
+}
+form label{
+	text-decoration: none;
+	font-weight: bold;
+	display: block;
+}
+form input{
+	margin-left: 1%;
+	display: inline-block;
+	position: relative;
+}
+form button{
+	display: inline-block;
+	position: relative;
+	border: 1px solid black;
+	border-radius: 3px;
+	padding: 5px;
+	margin: 2%;
+}
+p{
+	text-align: center;
+}
+
+/*Estilo excusivo para la página index.html*/
+
+.marca{
+	text-align: center;
+	padding: 1% 3%;
+}
+.marca li{
+	min-width: 20%;
+	background-color: white;
+	display: inline-block;
+	position: relative;
+	padding: 3px;
+	margin: 2px;
+	margin-bottom: 5px;
+	border: 1px solid #007BFF;
+	border-radius: 3px;
+}
+.marca li:hover {
+	background-color: lightgray;
+}
+.marca img{
+	display: block;
+	margin: auto;
+	padding-bottom: 3px;
+}
+.marcainput{
+	display: none;
+}
+.actual{
+	box-shadow: inset 0 0 500px #007BFF;
+	color: white;
+}
+
+/*Estilo excusivo para la página 3.html*/
+
+
+.form-control{
+	float: left;
+}
+.custom-select{
+	float: left;
+	margin-left: 8px;
+}
+.fecha{
+	width: 32%;
+}
+.dni{
+	display: block;
+	text-align: center;
+}
